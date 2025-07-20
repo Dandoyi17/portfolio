@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Portfolio with dark theme | CodeWithTanveer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="top" class="dark_theme">
+
+    <!-- #HEADER -->
+    <header class="header" data-header>
+        <div class="container">
+
+            <h1 class="h1 logo">
+                <a href="#">My Portfolio<span></span></a>
+            </h1>
+
+            <div class="navbar-actions">
+                <select name="language" id="lang">
+          <option value="en">En</option>
+          <option value="ar">Ar</option>
+        </select>
+                <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
+  <span class="icon"></span>
+</button>
+            </div>
+
+            <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+      </button>
+
+            <nav class="navbar" data-navbar>
+                <ul class="navbar-list">
+                    <li><a href="#home" class="navbar-link">Home.</a></li>
+                    <li><a href="#about" class="navbar-link">About.</a></li>
+                    <li><a href="#skills" class="navbar-link">Skills.</a></li>
+                    <li><a href="#portfolio" class="navbar-link">Portfolio.</a></li>
+                    <li><a href="#contact" class="navbar-link">Contact.</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+        <article class="container">
+
+            <!-- #HERO -->
+            <section class="hero" id="home">
+
+                <figure class="hero-banner">
+                    <picture class="pix">
+                        <!--   <source srcset="./img/background.png" media="(min-width: 768px)">
+                        <source srcset="./assets/images/hero-banner-md.png" media="(min-width: 500px)">
+                       -->
+                        <img src="./img/background.png" alt="A man in a blue shirt with a happy expression" class="w-100">
+                    </picture>
+                </figure>
+
+                <div class="hero-content">
+                    <h2 class="h2a hero-title">
+                        <span id="rotating-text"></span><span id="cursor">|</span>
+                    </h2>
+                    <a href="#contact" class="btn btn-primary">Get in touch</a>
+                </div>
+
+                <ul class="hero-social-list">
+                    <li>
+                        <a href="#" class="hero-social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                            <div class="tooltip">Facebook</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hero-social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                            <div class="tooltip">Twitter</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hero-social-link">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                            <div class="tooltip">Linkedin</div>
+                        </a>
+                    </li>
+                </ul>
+                <a href="#stats" class="scroll-down">Scroll</a>
+            </section>
+
+            <!-- #STATS -->
+            <section class="stats" id="stats">
+                <ul class="stats-list">
+                    <li>
+                        <a href="#" class="stats-card">
+                            <div class="card-icon">
+                                <!--<img src="./img/style.jpg" alt="Badge icon">-->
+                            </div>
+                            <h2 class="h2 card-title">
+                                7+ <strong>Years of Experience</strong>
+                            </h2>
+                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="stats-card">
+                            <div class="card-icon">
+
+                            </div>
+                            <h2 class="h2 card-title">
+                                <strong>Completed Projects</strong>
+                            </h2>
+                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="stats-card">
+                            <div class="card-icon">
+
+                            </div>
+                            <h2 class="h2 card-title">
+                                <strong>Happy Clients</strong>
+                            </h2>
+                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- #ABOUT -->
+            <section class="about" id="about">
+                <figure class="about-banner">
+                    <img src="./img/profile.jpg" alt="A man in a alice blue shirt with a thinking expression" class="w-100">
+                </figure>
+                <div class="about-content section-content">
+                    <p class="section-subtitle">About me</p>
+                    <h2 class="h3 section-title">Need a Creative Product? I can Help You!</h2>
+                    <p class="section-text">
+                        Hi, I'm Simon Daniel Adoyi, a passionate and results-driven Website Designer, Certified Google IT Support Analyst, and multi-skilled IT Professional with over 7 years of experience in technology-driven roles. My career journey has equipped me with a strong
+                        blend of creative web development, IT support, networking, and data analysis skills, refined through roles at reputable organizations such as Heritage Bank Plc, Nigerian Breweries Plc (Kaduna), Kenzzound Studios, and Alazzm Car
+                        Showroom, Abu Dhabi (UAE). I hold a Bachelor’s degree (Master’s in view) and am certified by Google in IT Support. I’m driven by purpose, progress, and problem-solving. Whether building functional websites, configuring complex
+                        networks, or troubleshooting IT challenges, I bring clarity, structure, and commitment to every task.</p>
+                    <div class="btn-group">
+                        <button class="btn btn-secondary">Hire me</button>
+                        <button class="btn btn-primary">Download cv</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- #SKILLS -->
+            <section class="skills" id="skills">
+                <div class="skills-content section-content">
+                    <p class="section-subtitle">My skills</p>
+                    <h2 class="h3 section-title">My Expertise Includes:</h2>
+                    <p class="section-text">
+                        Web Design & Development (Responsive & modern user interfaces) Programming (Problem-solving & solution-oriented coding) IT Support Services (Hardware/software installation & troubleshooting) Network Configuration (LAN/WAN setup, router/switch, CCNA level
+                        tasks) System Administration (Software upgrades, end-user support, UI/UX testing) CCTV & Security Systems (Installation, monitoring, and maintenance) Data Analysis & Reporting (Accurate insights & decision support) </p>
+                    <div class="skills-toggle" data-toggle-box>
+                        <button class="toggle-btn active" data-toggle-btn>Skills</button>
+                        <button class="toggle-btn" data-toggle-btn>Tools</button>
+                    </div>
+                </div>
+                <div class="skills-box" data-skills-box>
+                    <ul class="skills-list">
+                        <li>
+                            <div class="skill-card">
+                                <div class="tooltip">HTML5</div>
+                                <div class="card-icon">
+                                    <img src="./img/HTML5_logo.png" alt="HTML5 logo">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-card">
+                                <div class="tooltip">CSS3</div>
+                                <div class="card-icon">
+                                    <img src="./img/css.png" alt="CSS3 logo">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-card">
+                                <div class="tooltip">JavaScript</div>
+                                <div class="card-icon">
+                                    <img src="./img/js.png" alt="JavaScript logo">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-card">
+                                <div class="tooltip">PHP</div>
+                                <div class="card-icon">
+                                    <img src="./img/php.png" alt="PHP logo">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-card">
+                                <div class="tooltip">Figma</div>
+                                <div class="card-icon">
+                                    <img src="./img/figma.png" alt="figma logo">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-card">
+                                <div class="tooltip">Bootstrap</div>
+                                <div class="card-icon">
+                                    <img src="./img/bootstrap.png" alt="Bootstrap logo">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-card">
+                                <div class="tooltip">Cisco Networking</div>
+                                <div class="card-icon">
+                                    <img src="./img/Cisco.png" alt="cisco logo">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-card">
+                                <div class="tooltip">Wordpress</div>
+                                <div class="card-icon">
+                                    <img src="./img/wordpress.png" alt="wordpress logo">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-card">
+                                <div class="tooltip">Data Analyst</div>
+                                <div class="card-icon">
+                                    <img src="./img/excel.png" alt="datalysis logo">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-card">
+                                <div class="tooltip">SQL</div>
+                                <div class="card-icon">
+                                    <img src="./img/sql.png" alt="sql logo">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-card">
+                                <div class="tooltip">Github</div>
+                                <div class="card-icon">
+                                    <img src="./img/github.png" alt="graphics logo">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-card">
+                                <div class="tooltip">Production</div>
+                                <div class="card-icon">
+                                    <img src="./img/video.png" alt="video logo">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="tools-list">
+                        <li>
+                            <div class="skill-card">
+                                <div class="tooltip">VS Code</div>
+                                <div class="card-icon">
+                                    <img src="./img/vs.png" alt="vscode logo">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-card">
+                                <div class="tooltip">Corel draw</div>
+                                <div class="card-icon">
+                                    <img src="./img/corel.png" alt="corel logo">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-card">
+                                <div class="tooltip">Adobe Video editing</div>
+                                <div class="card-icon">
+                                    <img src="./img/pro.png" alt="video logo">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-card">
+                                <div class="tooltip">Music Production</div>
+                                <div class="card-icon">
+                                    <img src="./img/cub.png" alt="music logo">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-card">
+                                <div class="tooltip">Sound</div>
+                                <div class="card-icon">
+                                    <img src="./img/fl.png" alt="sound logo">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-card">
+                                <div class="tooltip">Data analysis</div>
+                                <div class="card-icon">
+                                    <img src="./img/excel.png" alt="Command Line logo">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-card">
+                                <div class="tooltip">VS Code</div>
+                                <div class="card-icon">
+                                    <img src="./img/vs-code.png" alt="VS Code logo">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-card">
+                                <div class="tooltip">Photo shop</div>
+                                <div class="card-icon">
+                                    <img src="./img/ph.png" alt="photoshop logo">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-card">
+                                <div class="tooltip">UI UX</div>
+                                <div class="card-icon">
+                                    <img src="./img/figma.png" alt="figma logo">
+                                </div>
+                            </div>
+                        </li>
+                        <!--
+                        <li>
+                            <div class="skill-card">
+                                <div class="tooltip">Slack</div>
+                                <div class="card-icon">
+                                    <img src="./images/slack.png" alt="Slack logo">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-card">
+                                <div class="tooltip">Photoshop</div>
+                                <div class="card-icon">
+                                    <img src="./img/3.jpg" alt="Photoshop logo">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-card">
+                                <div class="tooltip">Adobe XD</div>
+                                <div class="card-icon">
+                                    <img src="./img/5.jpg" alt="Adobe XD logo">
+                                </div>
+                            </div>
+                        </li>-->
+                    </ul>
+                </div>
+            </section>
+
+            <!-- #PROJECTS -->
+            <section class="project" id="portfolio">
+                <ul class="project-list">
+                    <li>
+                        <div class="project-content section-content">
+                            <p class="section-subtitle">My Work Ethic:</p>
+                            <h2 class="h3 section-title">See My Works Which Will Amaze You!</h2>
+                            <p class="section-text">
+                                I am a fast learner, time-conscious, and highly adaptable to new environments and tools. My style is a balance of creativity and technical precision, always focused on delivering solutions that align with user needs and organizational goals. I value teamwork,
+                                communication, and a strong sense of responsibility in everything I do. </p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://www.figma.com/proto/iRcZZ6MHUHLI3V6UBb4CZR/Untitled?node-id=141-1620&t=kcoerVNfafxJbPvX-1" class="project-card" target="_blank">
+                            <figure class="card-banner">
+                                <img src="./assets/images/project-1.png" class="w-100" alt="Saleman Project Prototype.">
+                            </figure>
+                            <div class="card-content">
+                                <h3 class="h4 card-title">Saleman Project Prototype</h3>
+
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.figma.com/proto/iRcZZ6MHUHLI3V6UBb4CZR/Untitled?node-id=121-324&t=kcoerVNfafxJbPvX-1" class="project-card" target="_blank">
+                            <figure class="card-banner">
+                                <img src="./images/project-2.png" class="w-100" alt="Agrix Figma Prototype.">
+                            </figure>
+                            <div class="card-content">
+                                <h3 class="h4 card-title">Agrix Figma Prototype</h3>
+                                <time class="publish-date" datetime="2022-04"></time>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://moolatxt.buzz/" class="project-card" target="_blank">
+                            <figure class="card-banner">
+                                <img src="./assets/images/project-3.png" class="w-100" alt="Ride Project P-Ride Transport.">
+                            </figure>
+                            <div class="card-content">
+                                <h3 class="h4 card-title">Ride Project P-Ride Transport</h3>
+
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.figma.com/proto/iRcZZ6MHUHLI3V6UBb4CZR/Untitled?node-id=59-145&t=kcoerVNfafxJbPvX-1" class="project-card" target="_blank">
+                            <figure class="card-banner">
+                                <img src="./assets/images/project-4.png" class="w-100" alt="FinExvhange App Prototype.">
+                            </figure>
+                            <div class="card-content">
+                                <h3 class="h4 card-title">FinExvhange App Prototype</h3>
+
+                            </div>
+                        </a>
+                    </li>
+                    <!-- <li>
+                        <a href="#" class="project-card">
+                            <figure class="card-banner">
+                                <img src="./assets/images/project-5.png" class="w-100" alt="On a dark liver background, Airport luggage car carrying a luggage.">
+                            </figure>
+                            <div class="card-content">
+                                <h3 class="h4 card-title">Lorem Ipsum Dolor 05</h3>
+                                <time class="publish-date" datetime="2022-04">April 2022</time>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="project-card">
+                            <figure class="card-banner">
+                                <img src="./assets/images/project-6.png" class="w-100" alt="On a yellow background, a digital watch and a glass.">
+                            </figure>
+                            <div class="card-content">
+                                <h3 class="h4 card-title">Lorem Ipsum Dolor 06</h3>
+                                <time class="publish-date" datetime="2022-04">April 2022</time>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="project-card">
+                            <figure class="card-banner">
+                                <img src="./assets/images/project-7.png" class="w-100" alt="A fujifilm instant camera on a dark electric blue background.">
+                            </figure>
+                            <div class="card-content">
+                                <h3 class="h4 card-title">Lorem Ipsum Dolor 07</h3>
+                                <time class="publish-date" datetime="2022-04">April 2022</time>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <button class="load-more">Load more work</button>
+                    </li>-->
+                </ul>
+            </section>
+
+            <!-- #CONTACT -->
+            <section class="contact" id="contact">
+                <div class="contact-content section-content">
+                    <p class="section-subtitle">Contact</p>
+                    <h2 class="h3 section-title">Have You Any Project? Please Drop a Message</h2>
+                    <p class="section-text">
+                        Get in touch and let me know how I can help. Fill out the form and I'll be in touch as soon as possible.
+                    </p>
+                    <ul class="contact-list">
+                        <li class="contact-list-item">
+                            <div class="contact-item-icon">
+                                <ion-icon name="location-outline"></ion-icon>
+                            </div>
+                            <div class="wrapper">
+                                <h3 class="h4 contact-item-title">Address:</h3>
+                                <address class="contact-info">
+                  Use the phone and email below to contact me.
+                </address>
+                            </div>
+                        </li>
+                        <li class="contact-list-item">
+                            <div class="contact-item-icon">
+                                <ion-icon name="call-outline"></ion-icon>
+                            </div>
+                            <div class="wrapper">
+                                <h3 class="h4 contact-item-title">Phone:</h3>
+                                <a href="tel:+2349032383209" class="contact-info">(+234) 903 238 3209</a>
+                                <a href="tel:+2347047440709" class="contact-info">(+234) 704 744 0709</a>
+                            </div>
+                        </li>
+                        <li class="contact-list-item">
+                            <div class="contact-item-icon">
+                                <ion-icon name="mail-outline"></ion-icon>
+                            </div>
+                            <div class="wrapper">
+                                <h3 class="h4 contact-item-title">Email:</h3>
+                                <a href="mailto:info@codewithtanveer.com" class="contact-info">danieladoyi808@gmail.com</a>
+                                <a href="mailto:support@codewithtanveer.com" class="contact-info">Danieladoyi84@gmail.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <ul class="contact-social-list">
+                                <li>
+                                    <a href="#" class="contact-social-link">
+                                        <div class="tooltip">Facebook</div>
+                                        <ion-icon name="logo-facebook"></ion-icon>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="contact-social-link">
+                                        <div class="tooltip">Twitter</div>
+                                        <ion-icon name="logo-twitter"></ion-icon>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="contact-social-link">
+                                        <div class="tooltip">Linkedin</div>
+                                        <ion-icon name="logo-linkedin"></ion-icon>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="contact-social-link">
+                                        <div class="tooltip">Youtube</div>
+                                        <ion-icon name="logo-youtube"></ion-icon>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <form action="#" class="contact-form">
+                    <div class="form-wrapper">
+                        <label for="name" class="form-label">Name</label>
+                        <div class="input-wrapper">
+                            <input type="text" name="name" id="name" required placeholder="e.g daniel simon" class="input-field">
+                            <ion-icon name="person-circle"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="form-wrapper">
+                        <label for="email" class="form-label">Email</label>
+                        <div class="input-wrapper">
+                            <input type="email" name="email" id="email" required placeholder="e.g daniel@mail.com" class="input-field">
+                            <ion-icon name="mail"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="form-wrapper">
+                        <label for="phone" class="form-label">Phone</label>
+                        <div class="input-wrapper">
+                            <input type="tel" name="phone" id="phone" required placeholder="+234 xxxxxx" class="input-field">
+                            <ion-icon name="call"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="form-wrapper">
+                        <label for="message" class="form-label">Message</label>
+                        <div class="input-wrapper">
+                            <textarea name="message" id="message" required placeholder="Write message..." class="input-field"></textarea>
+                            <ion-icon name="chatbubbles"></ion-icon>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+            </section>
+        </article>
+    </main>
+
+    <!-- #FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p class="h1 logo">
+                <a href="#">
+          Dandoyi<span></span>
+        </a>
+            </p>
+            <p class="copyright">
+                © 2025 <a href="#">Dandoyimart</a>. All rights reserved
+            </p>
+        </div>
+    </footer>
+
+    <!-- #GO TO TOP -->
+    <a href="#top" class="go-top" data-go-top title="Go to Top">
+        <ion-icon name="arrow-up"></ion-icon>
+    </a>
+
+    <!-- custom js link -->
+    <script src="./scriptai.js"></script>
+    <!-- ionicon link -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
